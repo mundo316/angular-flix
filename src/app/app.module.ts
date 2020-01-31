@@ -10,6 +10,9 @@ import { TitleListComponent } from './title-list/title-list.component';
 import { HeroButtonComponent } from './hero-button/hero-button.component';
 import { ItemComponent } from './item/item.component';
 import { ListToggleComponent } from './list-toggle/list-toggle.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HttpClient } from 'selenium-webdriver/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ListToggleComponent } from './list-toggle/list-toggle.component';
     TitleListComponent,
     HeroButtonComponent,
     ItemComponent,
-    ListToggleComponent
+    ListToggleComponent,
+    NavigationComponent,
+    UserProfileComponent,
+    HttpClient
   ],
   imports: [
     BrowserModule,
