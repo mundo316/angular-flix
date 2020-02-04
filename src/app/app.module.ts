@@ -12,7 +12,8 @@ import { ItemComponent } from './item/item.component';
 import { ListToggleComponent } from './list-toggle/list-toggle.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { HttpClient } from 'selenium-webdriver/http';
+// import this module, you cannot use HttpClient without it
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,11 +27,12 @@ import { HttpClient } from 'selenium-webdriver/http';
     ListToggleComponent,
     NavigationComponent,
     UserProfileComponent,
-    HttpClient
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // you cannot use this unless it is in the imports array
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
